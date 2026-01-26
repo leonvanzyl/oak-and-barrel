@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Dancing_Script, Source_Sans_3 } from "next/font/google";
 import "./globals.css";
+import ChatWidget from "@/components/ChatWidget";
 
 const playfairDisplay = Playfair_Display({
   variable: "--font-display",
@@ -37,6 +38,7 @@ export default function RootLayout({
         className={`${playfairDisplay.variable} ${dancingScript.variable} ${sourceSans.variable} antialiased`}
       >
         {children}
+        <ChatWidget />
       </body>
     </html>
   );
