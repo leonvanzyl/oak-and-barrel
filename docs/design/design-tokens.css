@@ -1,0 +1,198 @@
+/**
+ * Oak & Barrel Design Tokens
+ * CSS Custom Properties
+ * Version: 1.0.0
+ */
+
+:root {
+  /* ========================================
+     COLORS
+     ======================================== */
+
+  /* Primary */
+  --color-amber: #E8A54B;
+  --color-amber-light: #F5C670;
+  --color-amber-deep: #C4872F;
+
+  /* Neutral */
+  --color-cream: #FDF6E9;
+  --color-cream-soft: #FFFDF8;
+  --color-sand: #F5EBD9;
+  --color-charcoal: #2D2926;
+  --color-gray-warm: #6B635A;
+  --color-brown-oak: #8B6914;
+  --color-white: #FFFFFF;
+
+  /* Semantic */
+  --color-success: #5D8A4A;
+  --color-warning: #D4A03D;
+  --color-error: #C45B4A;
+  --color-info: #5B7B8C;
+
+  /* ========================================
+     TYPOGRAPHY
+     ======================================== */
+
+  /* Font Families */
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-script: 'Dancing Script', cursive;
+  --font-body: 'Source Sans 3', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Font Weights */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Font Sizes */
+  --font-size-xs: 0.75rem;    /* 12px */
+  --font-size-sm: 0.875rem;   /* 14px */
+  --font-size-base: 1rem;     /* 16px */
+  --font-size-lg: 1.125rem;   /* 18px */
+  --font-size-xl: 1.25rem;    /* 20px */
+  --font-size-2xl: 1.5rem;    /* 24px */
+  --font-size-3xl: 1.75rem;   /* 28px */
+  --font-size-4xl: 2.25rem;   /* 36px */
+  --font-size-5xl: 3rem;      /* 48px */
+  --font-size-6xl: 4rem;      /* 64px */
+
+  /* Line Heights */
+  --line-height-tight: 1.1;
+  --line-height-snug: 1.25;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.6;
+
+  /* ========================================
+     SPACING
+     ======================================== */
+
+  --space-0: 0;
+  --space-1: 0.25rem;   /* 4px */
+  --space-2: 0.5rem;    /* 8px */
+  --space-3: 0.75rem;   /* 12px */
+  --space-4: 1rem;      /* 16px */
+  --space-5: 1.5rem;    /* 24px */
+  --space-6: 2rem;      /* 32px */
+  --space-7: 3rem;      /* 48px */
+  --space-8: 4rem;      /* 64px */
+  --space-9: 6rem;      /* 96px */
+  --space-10: 8rem;     /* 128px */
+
+  /* ========================================
+     BORDER RADIUS
+     ======================================== */
+
+  --radius-none: 0;
+  --radius-sm: 0.25rem;   /* 4px */
+  --radius-md: 0.5rem;    /* 8px */
+  --radius-lg: 0.75rem;   /* 12px */
+  --radius-xl: 1rem;      /* 16px */
+  --radius-2xl: 1.5rem;   /* 24px */
+  --radius-full: 9999px;
+
+  /* ========================================
+     SHADOWS
+     ======================================== */
+
+  --shadow-sm: 0 1px 3px rgba(45, 41, 38, 0.08);
+  --shadow-md: 0 4px 12px rgba(45, 41, 38, 0.1);
+  --shadow-lg: 0 8px 24px rgba(45, 41, 38, 0.12);
+  --shadow-xl: 0 16px 48px rgba(45, 41, 38, 0.16);
+  --shadow-glow: 0 4px 24px rgba(232, 165, 75, 0.3);
+
+  /* ========================================
+     MOTION
+     ======================================== */
+
+  /* Durations */
+  --duration-instant: 100ms;
+  --duration-fast: 150ms;
+  --duration-normal: 250ms;
+  --duration-slow: 400ms;
+  --duration-slower: 600ms;
+
+  /* Easings */
+  --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-swift: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* ========================================
+     Z-INDEX
+     ======================================== */
+
+  --z-base: 0;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-overlay: 300;
+  --z-modal: 400;
+  --z-toast: 500;
+
+  /* ========================================
+     LAYOUT
+     ======================================== */
+
+  --container-max: 1280px;
+  --container-padding: var(--space-5);
+}
+
+/* Responsive container padding */
+@media (min-width: 768px) {
+  :root {
+    --container-padding: var(--space-7);
+  }
+}
+
+@media (min-width: 1280px) {
+  :root {
+    --container-padding: var(--space-8);
+  }
+}
+
+/* ========================================
+   UTILITY CLASSES
+   ======================================== */
+
+/* Typography utilities */
+.font-display { font-family: var(--font-display); }
+.font-script { font-family: var(--font-script); }
+.font-body { font-family: var(--font-body); }
+
+/* Color utilities */
+.text-charcoal { color: var(--color-charcoal); }
+.text-gray { color: var(--color-gray-warm); }
+.text-amber { color: var(--color-amber); }
+.bg-cream { background-color: var(--color-cream); }
+.bg-cream-soft { background-color: var(--color-cream-soft); }
+.bg-amber { background-color: var(--color-amber); }
+
+/* Shadow utilities */
+.shadow-sm { box-shadow: var(--shadow-sm); }
+.shadow-md { box-shadow: var(--shadow-md); }
+.shadow-lg { box-shadow: var(--shadow-lg); }
+.shadow-glow { box-shadow: var(--shadow-glow); }
+
+/* Transition utilities */
+.transition-fast { transition: all var(--duration-fast) var(--ease-smooth); }
+.transition-normal { transition: all var(--duration-normal) var(--ease-smooth); }
+.transition-slow { transition: all var(--duration-slow) var(--ease-smooth); }
+
+/* ========================================
+   ACCESSIBILITY
+   ======================================== */
+
+/* Focus visible styles */
+:focus-visible {
+  outline: 2px solid var(--color-amber);
+  outline-offset: 2px;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

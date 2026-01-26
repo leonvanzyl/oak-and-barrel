@@ -1,0 +1,28 @@
+Category,Item Name,Description,Price,Badge
+Appetizers,Truffle Burrata,"Creamy burrata, black truffle, arugula, aged balsamic, grilled sourdough",18,popular
+Appetizers,Wagyu Beef Tartare,"Hand-cut wagyu, quail egg, capers, cornichons, truffle aioli",24,chefs-pick
+Appetizers,Crispy Calamari,"Lightly battered, served with marinara and lemon aioli",16,
+Appetizers,Soup of the Day,"Chef's daily creation, served with artisan bread",12,
+Sushi & Sashimi,Chef's Omakase,"A curated selection of the freshest seasonal fish, 12 pieces",85,chefs-pick
+Sushi & Sashimi,Dragon Roll,"Shrimp tempura, eel, avocado, spicy mayo, eel sauce",22,popular
+Sushi & Sashimi,Salmon Sashimi,8 pieces of premium Norwegian salmon,26,
+Sushi & Sashimi,Spicy Tuna Roll,"Fresh tuna, spicy mayo, cucumber, sesame seeds",18,
+Sushi & Sashimi,Rainbow Roll,California roll topped with assorted sashimi,24,
+Prime Steaks,Prime Ribeye,"16oz aged ribeye, herb butter, roasted garlic, seasonal vegetables",58,chefs-pick
+Prime Steaks,Filet Mignon,"8oz center-cut tenderloin, red wine reduction, truffle mash",52,popular
+Prime Steaks,NY Strip,"14oz bone-in strip, peppercorn sauce, crispy onion rings",48,
+Prime Steaks,Tomahawk Ribeye,"32oz bone-in ribeye for two, roasted bone marrow, chimichurri",95,
+Burgers & Grills,The Classic Oak,"Prime beef patty, aged cheddar, lettuce, tomato, Oak & Barrel sauce",19,popular
+Burgers & Grills,Wagyu Smash Burger,"Double wagyu patties, American cheese, caramelized onions, truffle aioli",28,chefs-pick
+Burgers & Grills,Truffle Mushroom Burger,"Beef patty, swiss cheese, sautéed mushrooms, truffle mayo, arugula",24,
+Burgers & Grills,BBQ Bacon Burger,"Beef patty, smoked bacon, cheddar, crispy onions, house BBQ",22,
+Craft Beverages,Local IPA,"Hoppy and citrus-forward, from our local craft brewery",8,
+Craft Beverages,Belgian Wheat,Light and refreshing with hints of orange and coriander,9,
+Craft Beverages,Stout,Rich and creamy with coffee and chocolate notes,9,
+Craft Beverages,Pilsner,"Clean and crisp, a perfect complement to any meal",7,
+Craft Beverages,House Cabernet,Full-bodied with dark fruit and oak undertones,14,popular
+Craft Beverages,Napa Chardonnay,Buttery and elegant with notes of vanilla and pear,16,
+Desserts,Chocolate Lava Cake,"Warm dark chocolate cake with molten center, vanilla ice cream",14,popular
+Desserts,Crème Brûlée,Classic vanilla custard with caramelized sugar crust,12,chefs-pick
+Desserts,New York Cheesecake,"Creamy cheesecake, graham crust, berry compote",11,
+Desserts,Tiramisu,"Espresso-soaked ladyfingers, mascarpone, cocoa",13,

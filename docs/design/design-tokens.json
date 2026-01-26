@@ -1,0 +1,124 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "name": "Oak & Barrel Design Tokens",
+  "version": "1.0.0",
+
+  "color": {
+    "primary": {
+      "amber": { "value": "#E8A54B", "type": "color", "description": "Primary brand color, CTAs" },
+      "amber-light": { "value": "#F5C670", "type": "color", "description": "Hover states, stars" },
+      "amber-deep": { "value": "#C4872F", "type": "color", "description": "Active states" }
+    },
+    "neutral": {
+      "cream": { "value": "#FDF6E9", "type": "color", "description": "Page backgrounds" },
+      "cream-soft": { "value": "#FFFDF8", "type": "color", "description": "Card backgrounds" },
+      "sand": { "value": "#F5EBD9", "type": "color", "description": "Borders, dividers" },
+      "charcoal": { "value": "#2D2926", "type": "color", "description": "Primary text" },
+      "gray-warm": { "value": "#6B635A", "type": "color", "description": "Secondary text" },
+      "brown-oak": { "value": "#8B6914", "type": "color", "description": "Accent links" },
+      "white": { "value": "#FFFFFF", "type": "color", "description": "Pure white" }
+    },
+    "semantic": {
+      "success": { "value": "#5D8A4A", "type": "color", "description": "Success states" },
+      "warning": { "value": "#D4A03D", "type": "color", "description": "Warning states" },
+      "error": { "value": "#C45B4A", "type": "color", "description": "Error states" },
+      "info": { "value": "#5B7B8C", "type": "color", "description": "Info states" }
+    }
+  },
+
+  "typography": {
+    "fontFamily": {
+      "display": { "value": "'Playfair Display', Georgia, serif", "type": "fontFamily" },
+      "script": { "value": "'Dancing Script', cursive", "type": "fontFamily" },
+      "body": { "value": "'Source Sans 3', -apple-system, sans-serif", "type": "fontFamily" }
+    },
+    "fontWeight": {
+      "regular": { "value": 400, "type": "fontWeight" },
+      "medium": { "value": 500, "type": "fontWeight" },
+      "semibold": { "value": 600, "type": "fontWeight" },
+      "bold": { "value": 700, "type": "fontWeight" }
+    },
+    "fontSize": {
+      "xs": { "value": "0.75rem", "type": "fontSize", "description": "12px" },
+      "sm": { "value": "0.875rem", "type": "fontSize", "description": "14px" },
+      "base": { "value": "1rem", "type": "fontSize", "description": "16px" },
+      "lg": { "value": "1.125rem", "type": "fontSize", "description": "18px" },
+      "xl": { "value": "1.25rem", "type": "fontSize", "description": "20px" },
+      "2xl": { "value": "1.5rem", "type": "fontSize", "description": "24px" },
+      "3xl": { "value": "1.75rem", "type": "fontSize", "description": "28px" },
+      "4xl": { "value": "2.25rem", "type": "fontSize", "description": "36px" },
+      "5xl": { "value": "3rem", "type": "fontSize", "description": "48px" },
+      "6xl": { "value": "4rem", "type": "fontSize", "description": "64px" }
+    },
+    "lineHeight": {
+      "tight": { "value": 1.1, "type": "lineHeight" },
+      "snug": { "value": 1.25, "type": "lineHeight" },
+      "normal": { "value": 1.5, "type": "lineHeight" },
+      "relaxed": { "value": 1.6, "type": "lineHeight" }
+    }
+  },
+
+  "spacing": {
+    "0": { "value": "0", "type": "spacing" },
+    "1": { "value": "0.25rem", "type": "spacing", "description": "4px" },
+    "2": { "value": "0.5rem", "type": "spacing", "description": "8px" },
+    "3": { "value": "0.75rem", "type": "spacing", "description": "12px" },
+    "4": { "value": "1rem", "type": "spacing", "description": "16px" },
+    "5": { "value": "1.5rem", "type": "spacing", "description": "24px" },
+    "6": { "value": "2rem", "type": "spacing", "description": "32px" },
+    "7": { "value": "3rem", "type": "spacing", "description": "48px" },
+    "8": { "value": "4rem", "type": "spacing", "description": "64px" },
+    "9": { "value": "6rem", "type": "spacing", "description": "96px" },
+    "10": { "value": "8rem", "type": "spacing", "description": "128px" }
+  },
+
+  "borderRadius": {
+    "none": { "value": "0", "type": "borderRadius" },
+    "sm": { "value": "0.25rem", "type": "borderRadius", "description": "4px" },
+    "md": { "value": "0.5rem", "type": "borderRadius", "description": "8px" },
+    "lg": { "value": "0.75rem", "type": "borderRadius", "description": "12px" },
+    "xl": { "value": "1rem", "type": "borderRadius", "description": "16px" },
+    "2xl": { "value": "1.5rem", "type": "borderRadius", "description": "24px" },
+    "full": { "value": "9999px", "type": "borderRadius" }
+  },
+
+  "shadow": {
+    "sm": { "value": "0 1px 3px rgba(45, 41, 38, 0.08)", "type": "shadow" },
+    "md": { "value": "0 4px 12px rgba(45, 41, 38, 0.1)", "type": "shadow" },
+    "lg": { "value": "0 8px 24px rgba(45, 41, 38, 0.12)", "type": "shadow" },
+    "xl": { "value": "0 16px 48px rgba(45, 41, 38, 0.16)", "type": "shadow" },
+    "glow": { "value": "0 4px 24px rgba(232, 165, 75, 0.3)", "type": "shadow" }
+  },
+
+  "motion": {
+    "duration": {
+      "instant": { "value": "100ms", "type": "duration" },
+      "fast": { "value": "150ms", "type": "duration" },
+      "normal": { "value": "250ms", "type": "duration" },
+      "slow": { "value": "400ms", "type": "duration" },
+      "slower": { "value": "600ms", "type": "duration" }
+    },
+    "easing": {
+      "smooth": { "value": "cubic-bezier(0.4, 0, 0.2, 1)", "type": "cubicBezier" },
+      "bounce": { "value": "cubic-bezier(0.34, 1.56, 0.64, 1)", "type": "cubicBezier" },
+      "swift": { "value": "cubic-bezier(0.16, 1, 0.3, 1)", "type": "cubicBezier" }
+    }
+  },
+
+  "breakpoint": {
+    "sm": { "value": "480px", "type": "dimension" },
+    "md": { "value": "768px", "type": "dimension" },
+    "lg": { "value": "1024px", "type": "dimension" },
+    "xl": { "value": "1280px", "type": "dimension" },
+    "2xl": { "value": "1536px", "type": "dimension" }
+  },
+
+  "zIndex": {
+    "base": { "value": 0, "type": "number" },
+    "dropdown": { "value": 100, "type": "number" },
+    "sticky": { "value": 200, "type": "number" },
+    "overlay": { "value": 300, "type": "number" },
+    "modal": { "value": 400, "type": "number" },
+    "toast": { "value": 500, "type": "number" }
+  }
+}

@@ -1,0 +1,275 @@
+@import "tailwindcss";
+
+:root {
+  /* ========================================
+     COLORS
+     ======================================== */
+
+  /* Primary */
+  --color-amber: #E8A54B;
+  --color-amber-light: #F5C670;
+  --color-amber-deep: #C4872F;
+
+  /* Neutral */
+  --color-cream: #FDF6E9;
+  --color-cream-soft: #FFFDF8;
+  --color-sand: #F5EBD9;
+  --color-charcoal: #2D2926;
+  --color-gray-warm: #6B635A;
+  --color-brown-oak: #8B6914;
+  --color-white: #FFFFFF;
+
+  /* Semantic */
+  --color-success: #5D8A4A;
+  --color-warning: #D4A03D;
+  --color-error: #C45B4A;
+  --color-info: #5B7B8C;
+
+  /* ========================================
+     TYPOGRAPHY
+     ======================================== */
+
+  /* Font Families - using CSS variables from Next.js font loader */
+  --font-display: var(--font-display), Georgia, serif;
+  --font-script: var(--font-script), cursive;
+  --font-body: var(--font-body), -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Font Weights */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Font Sizes */
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 1.75rem;
+  --font-size-4xl: 2.25rem;
+  --font-size-5xl: 3rem;
+  --font-size-6xl: 4rem;
+
+  /* Line Heights */
+  --line-height-tight: 1.1;
+  --line-height-snug: 1.25;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.6;
+
+  /* ========================================
+     SPACING
+     ======================================== */
+
+  --space-0: 0;
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+  --space-9: 6rem;
+  --space-10: 8rem;
+
+  /* ========================================
+     BORDER RADIUS
+     ======================================== */
+
+  --radius-none: 0;
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+  --radius-full: 9999px;
+
+  /* ========================================
+     SHADOWS
+     ======================================== */
+
+  --shadow-sm: 0 1px 3px rgba(45, 41, 38, 0.08);
+  --shadow-md: 0 4px 12px rgba(45, 41, 38, 0.1);
+  --shadow-lg: 0 8px 24px rgba(45, 41, 38, 0.12);
+  --shadow-xl: 0 16px 48px rgba(45, 41, 38, 0.16);
+  --shadow-glow: 0 4px 24px rgba(232, 165, 75, 0.3);
+
+  /* ========================================
+     MOTION
+     ======================================== */
+
+  --duration-instant: 100ms;
+  --duration-fast: 150ms;
+  --duration-normal: 250ms;
+  --duration-slow: 400ms;
+  --duration-slower: 600ms;
+
+  --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-swift: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* ========================================
+     Z-INDEX
+     ======================================== */
+
+  --z-base: 0;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-overlay: 300;
+  --z-modal: 400;
+  --z-toast: 500;
+
+  /* ========================================
+     LAYOUT
+     ======================================== */
+
+  --container-max: 1280px;
+  --container-padding: var(--space-5);
+}
+
+@media (min-width: 768px) {
+  :root {
+    --container-padding: var(--space-7);
+  }
+}
+
+@media (min-width: 1280px) {
+  :root {
+    --container-padding: var(--space-8);
+  }
+}
+
+/* ========================================
+   TAILWIND THEME CONFIGURATION
+   ======================================== */
+
+@theme inline {
+  --color-amber: var(--color-amber);
+  --color-amber-light: var(--color-amber-light);
+  --color-amber-deep: var(--color-amber-deep);
+  --color-cream: var(--color-cream);
+  --color-cream-soft: var(--color-cream-soft);
+  --color-sand: var(--color-sand);
+  --color-charcoal: var(--color-charcoal);
+  --color-gray-warm: var(--color-gray-warm);
+  --color-brown-oak: var(--color-brown-oak);
+  --font-display: var(--font-display);
+  --font-script: var(--font-script);
+  --font-body: var(--font-body);
+}
+
+/* ========================================
+   BASE STYLES
+   ======================================== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-charcoal);
+  font-family: var(--font-body);
+  line-height: var(--line-height-normal);
+}
+
+/* ========================================
+   TYPOGRAPHY UTILITIES
+   ======================================== */
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-script {
+  font-family: var(--font-script);
+}
+
+.font-body {
+  font-family: var(--font-body);
+}
+
+/* ========================================
+   ACCESSIBILITY
+   ======================================== */
+
+:focus-visible {
+  outline: 2px solid var(--color-amber);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ========================================
+   ANIMATIONS
+   ======================================== */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes wave {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(20deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+}
+
+/* ========================================
+   PAGE FLIP ANIMATIONS (for Menu Book)
+   ======================================== */
+
+.page-flip-enter {
+  transform: rotateY(-180deg);
+  transform-origin: left center;
+}
+
+.page-flip-enter-active {
+  transform: rotateY(0deg);
+  transition: transform var(--duration-slower) var(--ease-smooth);
+}
+
+.page-flip-exit {
+  transform: rotateY(0deg);
+  transform-origin: left center;
+}
+
+.page-flip-exit-active {
+  transform: rotateY(180deg);
+  transition: transform var(--duration-slower) var(--ease-smooth);
+}
+
+/* Perspective container for 3D effect */
+.perspective-container {
+  perspective: 2000px;
+  transform-style: preserve-3d;
+}
