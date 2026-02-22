@@ -296,7 +296,7 @@ export default function ChatWidget() {
     script.textContent = `
       import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat@latest/dist/chat.bundle.es.js';
       createChat({
-        webhookUrl: 'https://n8n.srv1026488.hstgr.cloud/webhook/d7261880-e38a-4e65-b62d-721266b74d5c/chat',
+        webhookUrl: 'https://n8n.srv737816.hstgr.cloud/webhook/829b9839-4c86-4e3d-a4d7-d192a2e6ff7a/chat',
         mode: 'window',
         showWelcomeScreen: true,
         initialMessages: [
